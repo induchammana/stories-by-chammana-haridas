@@ -76,6 +76,22 @@
       margin-top: 50px;
       font-size: 0.9em;
     }
+    /* Fix long story titles on mobile */
+ul li a {
+  display: inline-block;
+  word-break: break-word;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Optional: slightly smaller links on small screens */
+@media only screen and (max-width: 480px) {
+  ul li a {
+    font-size: 1em;
+    padding: 8px 12px;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -102,3 +118,4 @@
 
 </body>
 </html>
+
