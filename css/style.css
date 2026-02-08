@@ -1,10 +1,9 @@
 /* =================== GLOBAL =================== */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #fff;
 }
 
 /* =================== TOP-RIGHT DROPDOWN MENU =================== */
@@ -70,22 +69,19 @@ body {
     width: 100%;
     height: 100vh; /* full screen */
     background: url('../images/background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    position: relative;
+    background-size: cover; /* fills screen, may crop slightly */
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center;       /* vertical center */
+    justify-content: center;   /* horizontal center */
+    text-align: center;
 }
 
 .hero-content {
-    text-align: center;
-    color: white;
-    text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
-    padding: 0 20px;
-    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.35); /* transparent dark overlay behind text */
+    padding: 40px 20px;
+    border-radius: 10px;
 }
 
-/* Hero text sizes */
 .hero-content h1 {
     font-size: 3em;
     margin-bottom: 10px;
@@ -93,6 +89,7 @@ body {
 
 .hero-content p {
     font-size: 1.2em;
+    max-width: 700px;
 }
 
 /* =================== RESPONSIVE =================== */
