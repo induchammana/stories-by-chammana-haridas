@@ -8,26 +8,36 @@
 </head>
 <body>
 
-<!-- Top-right navigation menu -->
+<!-- Top-right multi-level dropdown menu -->
 <nav class="top-nav">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About Chammana Haridas</a></li>
+  <ul class="menu">
     <li class="dropdown">
-      <a href="#">Stories</a>
+      <a href="#">Menu &#9662;</a>
       <ul class="dropdown-menu">
-        <li><a href="stories/short.html">Short Stories</a></li>
-        <li><a href="stories/long.html">Long Stories</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Chammana Haridas</a></li>
+        <li class="dropdown">
+          <a href="#">Stories &#9656;</a>
+          <ul class="dropdown-menu">
+            <li><a href="stories/short.html">Short Stories</a></li>
+            <li><a href="stories/long.html">Long Stories</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </li>
-    <li><a href="contact.html">Contact</a></li>
   </ul>
 </nav>
 
-<!-- Homepage images -->
-<main class="home-images">
-  <img src="images/father.jpg" alt="Chammana Haridas">
-  <img src="images/parents.jpg" alt="Parents of Chammana Haridas">
+<!-- Homepage image slider -->
+<main class="home-carousel">
+  <div class="slide-track">
+    <div class="slide"><img src="images/father.jpg" alt="Chammana Haridas"></div>
+    <div class="slide"><img src="images/parents.jpg" alt="Parents of Chammana Haridas"></div>
+    <!-- Add more images here like:
+    <div class="slide"><img src="images/childhood.jpg" alt="Childhood"></div>
+    -->
+  </div>
 </main>
 
 </body>
