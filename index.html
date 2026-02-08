@@ -5,54 +5,178 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stories by Chammana Haridas</title>
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Inline CSS for carousel -->
+  <style>
+    /* Homepage carousel container */
+    .home-carousel {
+      overflow: hidden;
+      width: 100%;
+      max-height: 80vh;
+      position: relative;
+    }
+
+    .slide-track {
+      display: flex;
+      width: calc(250px * 10); /* Adjust based on number of slides */
+      animation: scroll 20s linear infinite;
+    }
+
+    .slide {
+      width: 100%;
+      flex-shrink: 0;
+    }
+
+    .slide img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); } /* Adjust for number of slides */
+    }
+
+    /* Ensure dropdown menus are visible */
+    .top-nav {
+      position: fixed;
+      top: 20px;
+      right: 30px;
+      z-index: 1000;
+    }
+
+    .top-nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .top-nav li {
+      display: inline-block;
+      position: relative;
+      margin-left: 20px;
+    }
+
+    .top-nav a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #fff;
+      background-color: rgba(0,0,0,0.5);
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    .top-nav a:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Dropdown styles */
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      right: 0;
+      background: rgba(255,255,255,0.9);
+      padding: 10px 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 5px;
+    }
+
+    .dropdown-menu li {
+      display: block;
+      margin: 0;
+    }
+
+    .dropdown-menu a {
+      color: #333;
+      padding: 8px 20px;
+      display: block;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    /* Header on top of carousel */
+    header {
+      text-align: center;
+      color: #fff;
+      text-shadow: 1px 1px 5px #000;
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 500;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    /* Body background */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: url('images/background.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    /* Ensure carousel slides on small screens */
+    @media (max-width: 768px) {
+      header h1 { font-size: 2em; }
+      header p { font-size: 1em; }
+    }
+
+  </style>
 </head>
-  
+
 <body>
-{
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background: url('../images/background.jpg') no-repeat center center fixed;
-    background-size: cover;
-}
-<!-- Top-right multi-level dropdown menu -->
-<nav class="top-nav">
-  <ul class="menu">
-    <li class="dropdown">
-      <a href="#">Menu &#9662;</a> <!-- Down arrow -->
-      <ul class="dropdown-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Chammana Haridas</a></li>
-        <li class="dropdown">
-          <a href="#">Stories &#9656;</a> <!-- Right arrow for nested -->
-          <ul class="dropdown-menu">
-            <li><a href="stories/short.html">Short Stories</a></li>
-            <li><a href="stories/long.html">Long Stories</a></li>
-          </ul>
-        </li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
 
-<!-- Site Header -->
-<header>
-  <h1>Stories by Chammana Haridas</h1>
-  <p>A collection of stories — short, long, and memorable tales that capture imagination and memories, preserved forever.</p>
-</header>
+  <!-- Top-right multi-level dropdown menu -->
+  <nav class="top-nav">
+    <ul class="menu">
+      <li class="dropdown">
+        <a href="#">Menu &#9662;</a>
+        <ul class="dropdown-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about chammana haridas.html">About Chammana Haridas</a></li>
+          <li class="dropdown">
+            <a href="#">Stories &#9656;</a>
+            <ul class="dropdown-menu">
+              <li><a href="stories/short.html">Short Stories</a></li>
+              <li><a href="stories/long story.html">Long Stories</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 
-<!-- Homepage image slider -->
-<main class="home-carousel">
-  <div class="slide-track">
-    <div class="slide"><img src="images/father.jpg" alt="Chammana Haridas"></div>
-    <div class="slide"><img src="images/parents.jpg" alt="Parents of Chammana Haridas"></div>
-    <!-- Add more images here if you want -->
-  </div>
-</main>
+  <!-- Homepage image slider -->
+  <main class="home-carousel">
+    <div class="slide-track">
+      <div class="slide"><img src="images/father.jpg" alt="Chammana Haridas"></div>
+      <div class="slide"><img src="images/parents.jpg" alt="Parents of Chammana Haridas"></div>
+      <!-- Add more slides if needed -->
+    </div>
+  </main>
+
+  <!-- Header text -->
+  <header>
+    <h1>Stories by Chammana Haridas</h1>
+    <p>A collection of stories — short, long, and memorable tales that capture imagination and memories, preserved forever.</p>
+  </header>
 
 </body>
 </html>
-
