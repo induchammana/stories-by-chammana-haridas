@@ -39,10 +39,11 @@ body {
     background-color: rgba(0,0,0,0.8);
 }
 
-/* Dropdown */
-.dropdown-menu {
+/* ---------- First-level dropdown ---------- */
+.top-nav > ul > li.dropdown > .dropdown-menu {
     display: none;
     position: absolute;
+    top: 100%;
     right: 0;
     background: rgba(0,0,0,0.7);
     padding: 10px 0;
@@ -50,17 +51,33 @@ body {
     min-width: 180px;
 }
 
-.dropdown-menu li {
+.top-nav > ul > li.dropdown:hover > .dropdown-menu {
     display: block;
 }
 
-.dropdown-menu a {
+/* ---------- Second-level dropdown (nested Stories) ---------- */
+.top-nav .dropdown-menu li.dropdown {
+    position: relative;
+}
+
+.top-nav .dropdown-menu li.dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: rgba(0,0,0,0.7);
+    padding: 10px 0;
+    border-radius: 5px;
+    min-width: 180px;
+}
+
+.top-nav .dropdown-menu li.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.top-nav .dropdown-menu li a {
     color: #fff;
     padding: 8px 20px;
-    display: block;
-}
-
-.dropdown:hover .dropdown-menu {
     display: block;
 }
 
@@ -68,8 +85,8 @@ body {
 .hero {
     width: 100%;
     height: 100vh; /* full screen */
-    background: url('../images/background.jpg') no-repeat center center fixed;
-    background-size: cover; /* fills screen, may crop slightly */
+    background: url('../images/background.jpg') no-repeat center top fixed;
+    background-size: cover;
     display: flex;
     align-items: center;       /* vertical center */
     justify-content: center;   /* horizontal center */
@@ -77,7 +94,7 @@ body {
 }
 
 .hero-content {
-    background-color: rgba(0, 0, 0, 0.35); /* transparent dark overlay behind text */
+    background-color: rgba(0, 0, 0, 0.35); /* transparent background */
     padding: 40px 20px;
     border-radius: 10px;
 }
