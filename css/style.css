@@ -97,3 +97,41 @@ body {
     font-size: 18px;
     line-height: 1.6;
 }
+/* ================= STORY PAGES ================= */
+
+.story-page {
+    min-height: 100vh;
+    background: #f5f5f5;
+    padding: 120px 20px 40px;
+}
+
+.story-container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+}
+
+.story-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.story-container p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.story-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
