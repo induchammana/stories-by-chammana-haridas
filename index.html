@@ -4,118 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stories by Chammana Haridas</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <style>
-    body {
-      font-family: 'Georgia', serif;
-      background-color: #fff8f0;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      text-align: center;
-      padding: 50px 20px 20px 20px;
-      background-color: #f5e0d0;
-    }
-
-    header h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-      color: #b35e2b;
-    }
-
-    header p {
-      font-size: 1.2em;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    main {
-      padding: 30px 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    h2 {
-      color: #b35e2b;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    ul li {
-      margin: 15px 0;
-      text-align: center;
-    }
-
-    ul li a {
-      text-decoration: none;
-      font-size: 1.2em;
-      color: #333;
-      border: 2px solid #b35e2b;
-      padding: 10px 20px;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-    }
-
-    ul li a:hover {
-      background-color: #b35e2b;
-      color: #fff;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #f5e0d0;
-      margin-top: 50px;
-      font-size: 0.9em;
-    }
-    /* Fix long story titles on mobile */
-ul li a {
-  display: inline-block;
-  word-break: break-word;
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-/* Optional: slightly smaller links on small screens */
-@media only screen and (max-width: 480px) {
-  ul li a {
-    font-size: 1em;
-    padding: 8px 12px;
-  }
-}
-
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Stories by Chammana Haridas</h1>
-    <p>A collection of stories — short, long, and memorable tales that capture imagination and memories, preserved forever.</p>
-  </header>
+<!-- Top-right navigation menu -->
+<nav class="top-nav">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Chammana Haridas</a></li>
+    <li class="dropdown">
+      <a href="#">Stories</a>
+      <ul class="dropdown-menu">
+        <li><a href="stories/short.html">Short Stories</a></li>
+        <li><a href="stories/long.html">Long Stories</a></li>
+      </ul>
+    </li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 
-  <main>
-    <h2>Stories</h2>
-    <ul>
-      <li><a href="stories/story1.html" target="_blank">Story 1 – ശിവൻ</a></li>
-      <li><a href="stories/story2.html" target="_blank">Story 2 – സുലൈമാൻ</a></li>
-      <li><a href="stories/story3.html" target="_blank">Story 3 – ഒറ്റയ്ക്ക്</a></li>
-      <li><a href="stories/story4.html" target="_blank">Story 4 – വെങ്ങളം യു.പി.സ്കൂൾ</a></li>
-      <li><a href="stories/story5.html" target="_blank">Story 5 – കഷണ്ടി</a></li>
-    </ul>
-  </main>
-
-  <footer>
-    © 2026 Chammana Haridas – All stories preserved for family and friends.
-  </footer>
+<!-- Homepage images -->
+<main class="home-images">
+  <img src="images/father.jpg" alt="Chammana Haridas">
+  <img src="images/parents.jpg" alt="Parents of Chammana Haridas">
+</main>
 
 </body>
 </html>
-
