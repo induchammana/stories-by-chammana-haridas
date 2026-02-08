@@ -46,3 +46,35 @@ footer {
     background-color: #fffbf0;
     margin-top: 2rem;
 }
+
+/* ---------- Story Page Layout Fix ---------- */
+
+.story-content {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  line-height: 1.8;
+  font-size: 1.1em;
+}
+
+/* Responsive story images */
+.story-image {
+  display: block;        /* forces image to its own line */
+  max-width: 100%;       /* prevents overflow on mobile */
+  height: auto;          /* keeps aspect ratio */
+  margin: 25px auto;     /* centers image */
+  border-radius: 10px;
+}
+
+/* Mobile-specific fixes */
+@media (max-width: 600px) {
+  .story-content {
+    padding: 15px;
+    font-size: 1em;
+  }
+
+  .story-image {
+    width: 100%;         /* image fits screen width */
+    margin: 20px 0;
+  }
+}
