@@ -78,3 +78,19 @@ footer {
     margin: 20px 0;
   }
 }
+/* ===== FINAL FORCE FIX FOR STORY LAYOUT ===== */
+
+.story-content img {
+  float: none !important;
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  margin: 20px auto !important;
+}
+
+/* Force text below images */
+.story-content p {
+  display: block;
+  clear: both;
+}
