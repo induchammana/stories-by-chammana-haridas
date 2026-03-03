@@ -1,144 +1,41 @@
-/* ================= GENERAL ================= */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Georgia', serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stories by Chammana Haridas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-body {
-  color: #333;
-  line-height: 1.6;
-  overflow-x: hidden; /* prevent horizontal scroll */
-  background-color: #f8f5f0;
-}
+<header>
+  <nav class="navbar">
+    <div class="logo">Stories by Chammana Haridas</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
 
-/* ================= HEADER & NAVBAR ================= */
-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 1000;
-}
+      <li class="dropdown">
+        <a href="#">Stories ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="stories/short.html">Short Stories</a></li>
+          <li><a href="stories/long.html">Long Stories</a></li>
+        </ul>
+      </li>
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 50px;
-}
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-.logo {
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-}
+<!-- Hero Section with background image -->
+<section class="hero"></section>
 
-.nav-links {
-  list-style: none;
-  display: flex;
-}
+<!-- Home content below hero -->
+<section class="home-content">
+  <h2>Welcome</h2>
+  <p>A collection of heartfelt stories written by Chammana Haridas.</p>
+</section>
 
-.nav-links li {
-  position: relative;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: white;
-  padding: 10px 15px;
-  display: block;
-  transition: 0.3s;
-}
-
-.nav-links li a:hover {
-  color: #ffd700;
-}
-
-/* ================= DROPDOWN MENU ================= */
-.nav-links li.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 40px;
-  left: 0;
-  background: rgba(0, 0, 0, 0.9);
-  list-style: none;
-  min-width: 160px;
-  z-index: 1000;
-}
-
-.dropdown-menu li a {
-  padding: 10px;
-  color: white;
-}
-
-/* ================= HERO SECTION ================= */
-.hero {
-  width: 100%;
-  min-height: 100vh;
-  background-image: url('../images/background.png'); /* your hero image with text */
-  background-position: center top;  /* horizontally center, align top */
-  background-repeat: no-repeat;
-  background-size: 100% auto;       /* stretch width, maintain aspect ratio */
-}
-
-/* ================= HOME CONTENT ================= */
-.home-content {
-  padding: 100px 20px 50px 20px; /* top padding to avoid header overlap */
-  text-align: center;
-  max-width: 800px;
-  margin: auto;
-}
-
-.home-content h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-.home-content p {
-  font-size: 18px;
-}
-
-/* ================= MOBILE ================= */
-@media (max-width: 768px) {
-  .navbar {
-    padding: 10px 20px;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    background: rgba(0,0,0,0.9);
-    display: none; /* hide by default for mobile */
-  }
-
-  .nav-links li {
-    margin: 5px 0;
-  }
-
-  .nav-links li a {
-    padding: 10px;
-  }
-
-  .nav-links li.dropdown:hover .dropdown-menu {
-    position: static; /* dropdown opens below parent */
-  }
-
-  .home-content {
-    padding: 150px 15px 50px 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .home-content h2 {
-    font-size: 24px;
-  }
-
-  .home-content p {
-    font-size: 16px;
-  }
-}
+</body>
+</html>
