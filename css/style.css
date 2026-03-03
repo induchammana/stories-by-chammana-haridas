@@ -19,7 +19,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.9);
   z-index: 1000;
 }
 
@@ -77,7 +77,7 @@ header {
   display: block;
 }
 
-/* ===== HERO IMAGE (HOME PAGE) ===== */
+/* ===== HERO (HOME PAGE) ===== */
 
 .hero {
   margin-top: 70px;
@@ -89,29 +89,11 @@ header {
   display: block;
 }
 
-/* ===== PAGE TITLE ===== */
-
-.page-title {
-  margin-top: 120px; /* space for fixed navbar */
-  text-align: center;
-  padding: 40px 20px;
-}
-
-.page-title h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.page-title p {
-  color: #555;
-  font-size: 16px;
-}
-
 /* ===== SHORT STORIES PAGE ===== */
 
 .stories-container {
   max-width: 800px;
-  margin: 0 auto 80px;
+  margin: 120px auto 80px;
   padding: 0 20px;
 }
 
@@ -134,4 +116,72 @@ header {
 .story-card:hover {
   background: #f2f2f2;
   transform: translateY(-4px);
+}
+
+/* ===== STORY PAGE ===== */
+
+.story-page {
+  max-width: 800px;
+  margin: 140px auto 80px;   /* FIXES OVERLAP */
+  padding: 0 20px;
+  line-height: 1.9;
+  font-size: 18px;
+  color: #222;
+}
+
+.story-page h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.story-page .author {
+  text-align: center;
+  margin-bottom: 40px;
+  font-style: italic;
+  color: #666;
+}
+
+.story-page p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* ===== FOOTER ===== */
+
+.footer {
+  text-align: center;
+  padding: 30px;
+  background: #111;
+  color: white;
+  font-size: 14px;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links li a {
+    padding: 10px;
+  }
+
+  .story-page {
+    margin: 120px 20px 60px;
+    font-size: 16px;
+  }
+
+  .story-page h1 {
+    font-size: 24px;
+  }
+
 }
