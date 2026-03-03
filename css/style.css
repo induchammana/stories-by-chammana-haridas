@@ -9,16 +9,17 @@
 
 html, body {
   width: 100%;
-  overflow-x: hidden; /* prevent side scroll */
+  overflow-x: hidden;
+  background-color: #fafafa;
 }
 
-/* ===== HEADER ===== */
+/* ===== HEADER / NAVBAR ===== */
 
 header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.85);
   z-index: 1000;
 }
 
@@ -49,6 +50,7 @@ header {
   color: white;
   padding: 10px 15px;
   display: block;
+  transition: 0.3s ease;
 }
 
 .nav-links li a:hover {
@@ -60,24 +62,76 @@ header {
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 40px;
+  top: 45px;
   left: 0;
   background: black;
   list-style: none;
+  min-width: 160px;
+}
+
+.dropdown-menu li a {
+  padding: 10px 15px;
 }
 
 .dropdown:hover .dropdown-menu {
   display: block;
 }
 
-/* ===== HERO IMAGE ===== */
+/* ===== HERO IMAGE (HOME PAGE) ===== */
 
 .hero {
-  margin-top: 70px;  /* space for navbar */
+  margin-top: 70px;
 }
 
 .hero img {
-  width: 100%;       /* full width */
-  height: auto;      /* keep aspect ratio */
-  display: block;    /* remove gaps */
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== PAGE TITLE ===== */
+
+.page-title {
+  margin-top: 120px; /* space for fixed navbar */
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.page-title h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.page-title p {
+  color: #555;
+  font-size: 16px;
+}
+
+/* ===== SHORT STORIES PAGE ===== */
+
+.stories-container {
+  max-width: 800px;
+  margin: 0 auto 80px;
+  padding: 0 20px;
+}
+
+.story-card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.story-card a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #222;
+  display: block;
+}
+
+.story-card:hover {
+  background: #f2f2f2;
+  transform: translateY(-4px);
 }
