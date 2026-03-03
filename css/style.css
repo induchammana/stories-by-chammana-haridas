@@ -1,4 +1,5 @@
 /* ===== GENERAL ===== */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,11 +7,13 @@
   font-family: Georgia, serif;
 }
 
-body {
-  overflow-x: hidden;
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* prevent side scroll */
 }
 
 /* ===== HEADER ===== */
+
 header {
   position: fixed;
   top: 0;
@@ -52,7 +55,8 @@ header {
   color: gold;
 }
 
-/* Dropdown */
+/* ===== DROPDOWN ===== */
+
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -67,12 +71,13 @@ header {
 }
 
 /* ===== HERO IMAGE ===== */
+
 .hero {
-  margin-top: 70px; /* space for fixed navbar */
+  margin-top: 70px;  /* space for navbar */
 }
 
 .hero img {
-  width: 100%;     /* stretch horizontally */
-  height: auto;    /* keep aspect ratio */
-  display: block;  /* remove white gaps */
+  width: 100%;       /* full width */
+  height: auto;      /* keep aspect ratio */
+  display: block;    /* remove gaps */
 }
