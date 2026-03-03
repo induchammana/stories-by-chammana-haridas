@@ -81,16 +81,15 @@ header {
 .hero {
   width: 100%;
   height: 100vh; /* full viewport height */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+  display: block;
+  overflow: hidden; /* prevent extra image from overflowing */
 }
 
 .hero-image {
-  width: 100%;   /* stretch horizontally */
-  height: auto;  /* maintain aspect ratio */
-  object-fit: contain; /* keep all image visible */
+  width: 100%;       /* stretch horizontally */
+  height: 100%;      /* fill viewport height */
+  object-fit: cover;  /* cover full area, keep aspect ratio */
+  display: block;     /* remove inline spacing */
 }
 
 /* ================= HOME CONTENT ================= */
