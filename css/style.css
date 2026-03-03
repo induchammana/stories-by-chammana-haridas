@@ -80,7 +80,7 @@ body.home {
 .hero {
   width: 100%;
   min-height: 100vh; /* full viewport height */
-  background: url('../images/background.jpg') no-repeat center top;
+  background: url('../images/background.png') no-repeat center top;
   background-size: cover;
   background-attachment: scroll; /* image scrolls with page */
   display: flex;
