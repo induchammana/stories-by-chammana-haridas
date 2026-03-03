@@ -9,7 +9,8 @@
 body {
   color: #333;
   line-height: 1.6;
-  overflow-x: hidden;
+  overflow-x: hidden; /* prevent horizontal scroll */
+  background-color: #f8f5f0;
 }
 
 /* ================= HEADER & NAVBAR ================= */
@@ -80,14 +81,36 @@ header {
 .hero {
   width: 100%;
   height: 100vh; /* full viewport height */
-  background-image: url('../images/background.png');
-  background-repeat: no-repeat;
-  background-size: cover;        /* fills the area, keeps aspect ratio */
-  background-position: center center; /* center image vertically & horizontally */
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
-/* ================= MOBILE RESPONSIVENESS ================= */
+.hero-image {
+  width: 100%;   /* stretch horizontally */
+  height: auto;  /* maintain aspect ratio */
+  object-fit: contain; /* keep all image visible */
+}
+
+/* ================= HOME CONTENT ================= */
+.home-content {
+  padding: 100px 20px 50px 20px; /* top padding to avoid header overlap */
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.home-content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.home-content p {
+  font-size: 18px;
+}
+
+/* ================= MOBILE ================= */
 @media (max-width: 768px) {
   .navbar {
     padding: 10px 20px;
@@ -95,36 +118,33 @@ header {
 
   .nav-links {
     flex-direction: column;
-    display: none; /* hidden by default for mobile */
     background: rgba(0,0,0,0.9);
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0;
-  }
-
-  .nav-links.active {
-    display: flex;
+    display: none; /* hide by default for mobile */
   }
 
   .nav-links li {
     margin: 5px 0;
   }
 
-  .dropdown-menu {
-    position: static;
+  .nav-links li a {
+    padding: 10px;
   }
 
-  .mobile-toggle {
-    display: block;
-    color: white;
-    font-size: 28px;
-    cursor: pointer;
+  .nav-links li.dropdown:hover .dropdown-menu {
+    position: static; /* dropdown opens below parent */
+  }
+
+  .home-content {
+    padding: 150px 15px 50px 15px;
   }
 }
 
 @media (max-width: 480px) {
-  .logo {
-    font-size: 18px;
+  .home-content h2 {
+    font-size: 24px;
+  }
+
+  .home-content p {
+    font-size: 16px;
   }
 }
