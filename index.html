@@ -1,44 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Stories by Chammana Haridas</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>Stories by Chammana Haridas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
 <!-- ================= NAVIGATION ================= -->
-<nav class="top-nav">
-    <ul>
-        <li><a href="index.html">Home</a></li>
+<header>
+  <nav class="navbar">
+    <div class="logo">Stories by Chammana Haridas</div>
 
-        <li class="dropdown">
-            <a href="#">Stories ▾</a>
-            <ul class="dropdown-menu">
-                <li><a href="stories/short.html">Short Stories</a></li>
-                <li><a href="stories/long.html">Long Stories</a></li>
-            </ul>
-        </li>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
 
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <li class="dropdown">
+        <a href="#">Stories ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="stories/short.html">Short Stories</a></li>
+          <li><a href="stories/long.html">Long Stories</a></li>
+        </ul>
+      </li>
+
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
-</nav>
+  </nav>
+</header>
 
-<!-- ================= HERO SECTION ================= -->
+<!-- ================= HERO SLIDER ================= -->
 <section class="hero">
-    <div class="hero-text">
-        <h1>Stories by Chammana Haridas</h1>
-        <p>
-            A collection of short and long stories preserving memories, emotions,
-            and imagination forever.
-        </p>
-    </div>
+  <div class="slider">
+    <div class="slide active" style="background-image: url('images/slide1.jpg');"></div>
+    <div class="slide" style="background-image: url('images/slide2.jpg');"></div>
+    <div class="slide" style="background-image: url('images/slide3.jpg');"></div>
+  </div>
+
+  <div class="hero-content">
+    <h1>Stories by<br>Chammana Haridas</h1>
+    <p>Memories. Emotions. Life in words.</p>
+  </div>
 </section>
+
+<!-- ================= SIMPLE CONTENT SECTION ================= -->
+<section class="home-content">
+  <h2>Welcome</h2>
+  <p>
+    A collection of heartfelt stories written by Chammana Haridas.
+    Dive into short stories and long narratives filled with emotion and life.
+  </p>
+</section>
+
+<script>
+let slides = document.querySelectorAll('.slide');
+let current = 0;
+
+function nextSlide() {
+  slides[current].classList.remove('active');
+  current = (current + 1) % slides.length;
+  slides[current].classList.add('active');
+}
+
+setInterval(nextSlide, 4000);
+</script>
 
 </body>
 </html>
