@@ -78,11 +78,11 @@ body.home {
 }
 
 .hero {
-  height: 100vh;
+  height: 100vh; /* full viewport height */
   background-image: url('../images/background.png');
-  background-position: center;
-  background-size: cover;
+  background-position: center center; /* center the image */
   background-repeat: no-repeat;
+  background-size: auto; /* don’t stretch, keep original aspect ratio */
   display: flex;
   justify-content: center;
   align-items: center;
