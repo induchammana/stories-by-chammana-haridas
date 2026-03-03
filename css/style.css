@@ -10,7 +10,6 @@ body {
   color: #333;
   line-height: 1.6;
   overflow-x: hidden;
-  background-color: #f8f5f0;
 }
 
 /* ================= HEADER & NAVBAR ================= */
@@ -57,6 +56,10 @@ header {
 }
 
 /* ================= DROPDOWN MENU ================= */
+.nav-links li.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -73,39 +76,18 @@ header {
   color: white;
 }
 
-.nav-links li.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
 /* ================= HERO SECTION ================= */
 .hero {
   width: 100%;
-  min-height: 100vh;
-  background-image: url('../images/background.png'); /* your hero image with text */
-  background-position: center center; /* center the image */
+  height: 100vh;
+  background-image: url('../images/background.png');
+  background-position: center center;  /* center image */
   background-repeat: no-repeat;
-  background-size: cover; /* fill width, maintain aspect ratio */
+  background-size: contain;            /* scale to fit width, maintain aspect ratio */
+  display: block;
 }
 
-/* ================= HOME CONTENT ================= */
-.home-content {
-  padding: 100px 20px 50px 20px; /* top padding to avoid header overlap */
-  text-align: center;
-  max-width: 800px;
-  margin: auto;
-}
-
-.home-content h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-.home-content p {
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-/* ================= MOBILE RESPONSIVE ================= */
+/* ================= MOBILE RESPONSIVENESS ================= */
 @media (max-width: 768px) {
   .navbar {
     padding: 10px 20px;
@@ -113,28 +95,36 @@ header {
 
   .nav-links {
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.9);
+    display: none; /* hidden by default for mobile */
+    background: rgba(0,0,0,0.9);
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+
+  .nav-links.active {
+    display: flex;
   }
 
   .nav-links li {
     margin: 5px 0;
   }
 
-  .nav-links li a {
-    padding: 10px;
+  .dropdown-menu {
+    position: static;
   }
 
-  .home-content {
-    padding: 150px 15px 50px 15px;
+  .mobile-toggle {
+    display: block;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
   }
 }
 
 @media (max-width: 480px) {
-  .home-content h2 {
-    font-size: 24px;
-  }
-
-  .home-content p {
-    font-size: 16px;
+  .logo {
+    font-size: 18px;
   }
 }
