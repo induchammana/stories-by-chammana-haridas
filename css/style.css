@@ -77,17 +77,15 @@ body.home {
   overflow-x: hidden;
 }
 
+/* ================= HERO SECTION ================= */
 .hero {
-  height: 100vh; /* full viewport height */
-  background-image: url('../images/background.png');
-  background-position: center center; /* center the image */
+  width: 100%;
+  min-height: 100vh;               /* full screen height minimum */
+  background-image: url('../images/background.png'); /* your image with text */
+  background-position: center top;  /* align image from top center */
   background-repeat: no-repeat;
-  background-size: auto; /* don’t stretch, keep original aspect ratio */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
+  background-size: contain;         /* show entire image, keep aspect ratio */
+  display: block;
 }
 
 .hero-text {
