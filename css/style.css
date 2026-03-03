@@ -82,8 +82,8 @@ header {
   height: 100vh; /* full viewport height */
   background-image: url('../images/background.png');
   background-repeat: no-repeat;
-  background-size: 100% auto;       /* stretch width, keep aspect ratio for height */
-  background-position: center bottom; /* bottom stays visible */
+  background-size: cover;        /* fills the area, keeps aspect ratio */
+  background-position: center center; /* center image vertically & horizontally */
   display: block;
 }
 
