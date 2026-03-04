@@ -82,34 +82,39 @@ header {
 /* ===== HERO (HOME PAGE) ===== */
 
 .hero {
-  margin-top: 70px; /* space for fixed navbar */
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 300px; /* ensures hero is visible even if image collapses */
-  background-color: #fafafa; /* optional background behind image */
+  min-height: 300px;        /* ensures image is visible on mobile */
+  background-color: #fafafa; /* optional background */
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
+/* IMAGE STYLING */
 .hero img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
   height: auto;
   display: block;
 }
 
-/* ===== MOBILE HERO ===== */
+/* FIX NAVBAR OVERLAP */
+
+/* Desktop: no gap between navbar and image */
+@media (min-width: 769px) {
+  .hero {
+    margin-top: 0; /* flush with navbar */
+  }
+}
+
+/* Mobile: leave space for fixed navbar */
 @media (max-width: 768px) {
   .hero {
-    margin-top: 80px;
-    min-height: 200px; /* smaller height for mobile */
-    padding: 10px;
-  }
-
-  .hero img {
-    width: 100%;
-    height: auto;
+    margin-top: 70px;  /* space for navbar so it doesn’t overlap */
+    min-height: 200px; /* ensures image shows */
+    padding: 5px;      /* optional padding for mobile */
   }
 }
 /* ===== SHORT STORIES PAGE ===== */
