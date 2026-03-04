@@ -13,7 +13,6 @@ html, body {
   background-color: #fafafa;
 }
 
-
 /* ===== HEADER / NAVBAR ===== */
 
 header {
@@ -26,20 +25,15 @@ header {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 15px 40px;
-}
-
-.logo {
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
+  padding: 15px 20px;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
+  gap: 25px;
 }
 
 .nav-links li {
@@ -49,60 +43,48 @@ header {
 .nav-links li a {
   text-decoration: none;
   color: white;
-  padding: 10px 15px;
-  display: block;
-  transition: 0.3s ease;
+  font-size: 18px;
+  padding: 8px 10px;
+  transition: 0.3s;
 }
 
 .nav-links li a:hover {
   color: gold;
 }
 
-
 /* ===== DROPDOWN ===== */
 
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 45px;
+  top: 35px;
   left: 0;
   background: black;
   list-style: none;
-  min-width: 160px;
+  min-width: 150px;
 }
 
 .dropdown-menu li a {
-  padding: 10px 15px;
+  display: block;
+  padding: 10px;
 }
 
 .dropdown:hover .dropdown-menu {
   display: block;
 }
 
-
 /* ===== HERO (HOME PAGE) ===== */
 
 .hero {
-  margin-top: 60px; /* space for fixed navbar */
+  margin-top: 60px;   /* space for fixed navbar */
   width: 100%;
-  height: calc(100vh - 60px); /* full screen height minus navbar */
-  overflow: hidden;
 }
 
 .hero img {
   width: 100%;
-  height: 100%;
-  object-fit: cover; /* prevents stretching */
+  height: auto;
   display: block;
 }
-
-.hero img {
-  width: 100%;
-  height: 70vh;       /* cinematic banner */
-  object-fit: cover;
-  display: block;
-}
-
 
 /* ===== SHORT STORIES PAGE ===== */
 
@@ -133,7 +115,6 @@ header {
   transform: translateY(-4px);
 }
 
-
 /* ===== STORY PAGE ===== */
 
 .story-page {
@@ -163,7 +144,6 @@ header {
   text-align: justify;
 }
 
-
 /* ===== FOOTER ===== */
 
 .footer {
@@ -174,36 +154,24 @@ header {
   font-size: 14px;
 }
 
-
 /* ===== MOBILE RESPONSIVE ===== */
 
 @media (max-width: 768px) {
 
   .navbar {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+    padding: 12px;
   }
 
   .nav-links {
-    flex-direction: row;
-    gap: 10px;
+    gap: 15px;
   }
 
   .nav-links li a {
-    padding: 6px 8px;
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .hero {
-    margin-top: 60px;
-  }
-
-  .hero img {
-    height: 50vh;   /* better mobile hero height */
-    width: 100%;
-    object-fit: cover;
+    margin-top: 55px;
   }
 
   .story-page {
