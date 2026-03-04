@@ -1,8 +1,6 @@
 /* ===== GENERAL ===== */
 
-
-
-{
+* {
   margin:0;
   padding:0;
   box-sizing:border-box;
@@ -18,9 +16,7 @@ html,body{
 }
 
 /* Push page content below fixed header */
-body{
-  padding-top:70px;
-}
+
 
 /* remove any browser spacing above first element */
 body, header, section 
@@ -193,9 +189,7 @@ header {
 
 @media (max-width:768px) {
 
-  body{
-    padding-top:65px;
-  }
+ 
 
   .nav-links {
     gap: 15px;
