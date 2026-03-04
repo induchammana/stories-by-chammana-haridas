@@ -50,8 +50,8 @@ header {
 
 /* menu container */
 .nav-links{
-  position:absolute;     /* change from fixed */
-  top:100%;              /* appears just below header */
+  position:fixed;      /* key change */
+  top:60px;            /* just below navbar */
   left:0;
   width:100%;
   background:#111;
@@ -60,6 +60,7 @@ header {
   flex-direction:column;
   padding:0;
   margin:0;
+  z-index:999;
 }
 
 .nav-links.active{
