@@ -84,15 +84,15 @@ header {
 
 /* ===== HERO ===== */
 
-.hero {
-  width: 100%;
-  position: relative;
+.hero{
+  width:100%;
+  margin-top:0;
 }
 
-.hero img {
-  width: 100%;
-  height: auto;
-  display: block;
+.hero img{
+  width:100%;
+  height:auto;
+  display:block;
 }
 
 /* ===== HERO TEXT ===== */
