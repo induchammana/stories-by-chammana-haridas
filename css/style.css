@@ -13,6 +13,11 @@ html, body {
   background-color: #fafafa;
 }
 
+/* space for fixed navbar */
+body {
+  padding-top: 60px;
+}
+
 /* ===== HEADER / NAVBAR ===== */
 
 header {
@@ -77,7 +82,6 @@ header {
 
 .hero {
   position: relative;
-  margin-top: 60px; /* space for fixed navbar */
   width: 100%;
 }
 
@@ -87,7 +91,7 @@ header {
   display: block;
 }
 
-/* ===== HERO TEXT OVER IMAGE ===== */
+/* ===== HERO TEXT ===== */
 
 .hero-text {
   position: absolute;
@@ -115,7 +119,7 @@ header {
 
 .stories-container {
   max-width: 800px;
-  margin: 120px auto 80px;
+  margin: 60px auto 80px;
   padding: 0 20px;
 }
 
@@ -144,7 +148,7 @@ header {
 
 .story-page {
   max-width: 800px;
-  margin: 140px auto 80px;
+  margin: 60px auto 80px;
   padding: 0 20px;
   line-height: 1.9;
   font-size: 18px;
@@ -179,12 +183,12 @@ header {
   font-size: 14px;
 }
 
-/* ===== MOBILE RESPONSIVE ===== */
+/* ===== MOBILE ===== */
 
 @media (max-width:768px) {
 
-  .navbar {
-    padding: 12px;
+  body {
+    padding-top: 55px;
   }
 
   .nav-links {
@@ -193,10 +197,6 @@ header {
 
   .nav-links li a {
     font-size: 15px;
-  }
-
-  .hero {
-    margin-top: 55px;
   }
 
   .hero-text {
@@ -212,12 +212,7 @@ header {
   }
 
   .story-page {
-    margin: 120px 20px 60px;
     font-size: 16px;
-  }
-
-  .story-page h1 {
-    font-size: 24px;
   }
 
 }
