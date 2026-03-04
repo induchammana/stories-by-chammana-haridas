@@ -194,8 +194,6 @@ header {
 
 @media (max-width:768px) {
 
- 
-
   .nav-links {
     gap: 15px;
   }
@@ -208,11 +206,13 @@ header {
     margin: 110px 20px 60px;
     font-size: 16px;
   }
-{
 
   .hero{
     height:70vh;
     overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
   }
 
   .hero img{
@@ -220,4 +220,5 @@ header {
     height:100%;
     object-fit:cover;
   }
+
 }
