@@ -41,9 +41,24 @@
 </picture>
 
 </section>
+<script>
 
+const toggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".nav-links");
+const dropdown = document.querySelector(".dropdown");
+
+toggle.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
+
+dropdown.addEventListener("click", () => {
+  dropdown.classList.toggle("active");
+});
+
+</script>
 </body>
 </html>
+
 
 
 
