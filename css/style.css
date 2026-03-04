@@ -13,13 +13,14 @@ html, body {
   background-color: #fafafa;
 }
 
+
 /* ===== HEADER / NAVBAR ===== */
 
 header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0,0,0,0.9);
   z-index: 1000;
 }
 
@@ -57,6 +58,7 @@ header {
   color: gold;
 }
 
+
 /* ===== DROPDOWN ===== */
 
 .dropdown-menu {
@@ -77,46 +79,23 @@ header {
   display: block;
 }
 
+
 /* ===== HERO (HOME PAGE) ===== */
 
 .hero {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 60px;   /* space for fixed navbar */
   overflow: hidden;
-  background-color: #fafafa;
-  position: relative;
 }
 
-/* HERO IMAGE */
 .hero img {
   width: 100%;
-  height: auto;
+  height: 70vh;       /* cinematic banner */
+  object-fit: cover;
   display: block;
 }
 
-/* Desktop: flush with navbar */
-@media (min-width: 769px) {
-  .hero {
-    margin-top: 0;
-  }
-}
 
-/* Mobile: leave space for navbar and force image to show */
-@media (max-width: 768px) {
-  .hero {
-    margin-top: 70px;
-    height: 250px;    /* fixed height */
-    text-align: center;
-  }
-
-  .hero img {
-    width: auto;
-    max-width: 100%;
-    height: 100%;
-  }
-}
 /* ===== SHORT STORIES PAGE ===== */
 
 .stories-container {
@@ -131,7 +110,7 @@ header {
   margin-bottom: 20px;
   border-radius: 8px;
   transition: 0.3s ease;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
 }
 
 .story-card a {
@@ -146,11 +125,12 @@ header {
   transform: translateY(-4px);
 }
 
+
 /* ===== STORY PAGE ===== */
 
 .story-page {
   max-width: 800px;
-  margin: 140px auto 80px;   /* FIXES OVERLAP */
+  margin: 140px auto 80px;
   padding: 0 20px;
   line-height: 1.9;
   font-size: 18px;
@@ -175,6 +155,7 @@ header {
   text-align: justify;
 }
 
+
 /* ===== FOOTER ===== */
 
 .footer {
@@ -184,6 +165,8 @@ header {
   color: white;
   font-size: 14px;
 }
+
+
 /* ===== MOBILE RESPONSIVE ===== */
 
 @media (max-width: 768px) {
@@ -206,7 +189,13 @@ header {
   }
 
   .hero {
-    margin-top: 70px;
+    margin-top: 60px;
+  }
+
+  .hero img {
+    height: 50vh;   /* better mobile hero height */
+    width: 100%;
+    object-fit: cover;
   }
 
   .story-page {
@@ -216,31 +205,6 @@ header {
 
   .story-page h1 {
     font-size: 24px;
-  }
-
-}
-/* ===== MOBILE HERO FIX ===== */
-
-@media (max-width: 768px) {
-
-  .hero {
-    margin-top: 60px;
-  }
-
-  .hero img {
-    width: 100%;
-    height: auto;
-  }
-
-}
-/* MOBILE HERO IMPROVEMENT */
-
-@media (max-width: 768px) {
-
-  .hero img {
-    width: 100%;
-    height: 50vh;   /* 50% of phone screen height */
-    object-fit: cover;
   }
 
 }
