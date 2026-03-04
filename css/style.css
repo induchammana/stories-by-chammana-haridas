@@ -200,18 +200,24 @@ header {
     font-size: 16px;
   }
 
-  .hero{
-    min-height:auto;
-    display:flex;
-    justify-content:center;
-    align-items:flex-start;
-    padding:20px;
+  .hero {
+    padding: 0;        /* remove squeezing space */
+    margin: 0;
+    width: 100%;
+    display: block;
   }
 
-  .hero img{
-    width:100%;
-    max-width:500px;
-    height:auto;
+  .hero img {
+    width: 100%;
+    max-width: none;   /* remove restriction */
+    height: auto;
+    display: block;
+  }
+
+  .hero-text {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
   }
 
 }
