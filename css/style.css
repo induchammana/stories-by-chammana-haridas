@@ -79,14 +79,30 @@ header {
 
 /* ===== HERO (HOME PAGE) ===== */
 
+/* ===== HERO (HOME PAGE) ===== */
+
 .hero {
-  margin: 0;
+  margin-top: 70px; /* leaves space for fixed navbar */
+  width: 100%;
+  text-align: center;
 }
 
 .hero img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   display: block;
+}
+
+/* ===== MOBILE HERO ===== */
+@media (max-width: 768px) {
+  .hero {
+    margin-top: 80px; /* slightly bigger space on mobile */
+  }
+
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* ===== SHORT STORIES PAGE ===== */
