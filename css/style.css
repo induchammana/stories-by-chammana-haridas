@@ -79,42 +79,42 @@ header {
 
 /* ===== HERO (HOME PAGE) ===== */
 
-/* ===== HERO (HOME PAGE) ===== */
-
 .hero {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 300px;        /* ensures image is visible on mobile */
-  background-color: #fafafa; /* optional background */
-  text-align: center;
-  position: relative;
   overflow: hidden;
+  background-color: #fafafa;
+  position: relative;
 }
 
-/* IMAGE STYLING */
+/* HERO IMAGE */
 .hero img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* FIX NAVBAR OVERLAP */
-
-/* Desktop: no gap between navbar and image */
+/* Desktop: flush with navbar */
 @media (min-width: 769px) {
   .hero {
-    margin-top: 0; /* flush with navbar */
+    margin-top: 0;
   }
 }
 
-/* Mobile: leave space for fixed navbar */
+/* Mobile: leave space for navbar and force image to show */
 @media (max-width: 768px) {
   .hero {
-    margin-top: 70px;  /* space for navbar so it doesn’t overlap */
-    min-height: 200px; /* ensures image shows */
-    padding: 5px;      /* optional padding for mobile */
+    margin-top: 70px;
+    height: 250px;    /* fixed height */
+    text-align: center;
+  }
+
+  .hero img {
+    width: auto;
+    max-width: 100%;
+    height: 100%;
   }
 }
 /* ===== SHORT STORIES PAGE ===== */
