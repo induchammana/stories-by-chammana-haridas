@@ -91,17 +91,10 @@ header {
 
 .hero{
   width:100%;
-  min-height:100vh;
-  display:flex;
-  align-items:flex-start;
-  justify-content:center;
-  text-align:center;
-  padding-top:40px;
 }
 
 .hero img{
-  max-width:420px;
-  width:80%;
+  width:100%;
   height:auto;
   display:block;
 }
