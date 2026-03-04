@@ -93,10 +93,10 @@ header {
   width:100%;
   min-height:100vh;
   display:flex;
-  align-items:center;
+  align-items:flex-start;
   justify-content:center;
   text-align:center;
-  padding:20px;
+  padding-top:40px;
 }
 
 .hero img{
