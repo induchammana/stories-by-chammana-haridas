@@ -13,12 +13,7 @@ html, body {
   background-color: #fafafa;
 }
 
-/* space for fixed navbar */
-body {
-  padding-top: 60px;
-}
-
-/* ===== HEADER / NAVBAR ===== */
+/* ===== HEADER ===== */
 
 header {
   position: fixed;
@@ -28,12 +23,16 @@ header {
   z-index: 1000;
 }
 
+/* Navbar */
+
 .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 20px;
+  padding: 14px 20px;
 }
+
+/* Navigation links */
 
 .nav-links {
   list-style: none;
@@ -41,47 +40,20 @@ header {
   gap: 25px;
 }
 
-.nav-links li {
-  position: relative;
-}
-
 .nav-links li a {
   text-decoration: none;
   color: white;
   font-size: 18px;
-  padding: 8px 10px;
-  transition: 0.3s;
+  padding: 6px 10px;
 }
 
 .nav-links li a:hover {
   color: gold;
 }
 
-/* ===== DROPDOWN ===== */
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 35px;
-  left: 0;
-  background: black;
-  list-style: none;
-  min-width: 150px;
-}
-
-.dropdown-menu li a {
-  display: block;
-  padding: 10px;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-/* ===== HERO SECTION ===== */
+/* ===== HERO IMAGE ===== */
 
 .hero {
-  position: relative;
   width: 100%;
 }
 
