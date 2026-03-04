@@ -208,17 +208,16 @@ header {
   }
 
   .hero{
-    height:70vh;
-    overflow:hidden;
+    min-height:calc(100vh - 60px);
     display:flex;
-    align-items:center;
     justify-content:center;
+    align-items:flex-start;
+    padding-top:40px;
   }
 
   .hero img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
+    width:90%;
+    max-width:350px;
   }
 
 }
