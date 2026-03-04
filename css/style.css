@@ -29,12 +29,12 @@ body, header, section
 }
 /* ===== HEADER / NAVBAR ===== */
 
-header{
-  position:sticky;
-  top:0;
-  width:100%;
-  background:transparent;
-  z-index:1000;
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.9);
+  z-index: 1000;
 }
 
 .navbar {
