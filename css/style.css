@@ -91,12 +91,17 @@ header {
 
 .hero{
   width:100%;
-  position:relative;
-  line-height:0;   /* removes tiny image spacing */
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:20px;
 }
 
 .hero img{
-  width:100%;
+  max-width:420px;
+  width:80%;
   height:auto;
   display:block;
 }
