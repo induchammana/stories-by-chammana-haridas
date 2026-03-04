@@ -18,6 +18,11 @@ body{
   padding-top:70px;
 }
 
+/* remove any browser spacing above first element */
+body, header, section 
+{
+  margin-top: 0;
+}
 /* ===== HEADER / NAVBAR ===== */
 
 header {
