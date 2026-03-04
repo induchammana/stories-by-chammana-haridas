@@ -82,13 +82,19 @@ header {
 /* ===== HERO (HOME PAGE) ===== */
 
 .hero {
-  margin-top: 70px; /* leaves space for fixed navbar */
+  margin-top: 70px; /* space for fixed navbar */
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px; /* ensures hero is visible even if image collapses */
+  background-color: #fafafa; /* optional background behind image */
   text-align: center;
 }
 
 .hero img {
   max-width: 100%;
+  max-height: 100%;
   height: auto;
   display: block;
 }
@@ -96,7 +102,9 @@ header {
 /* ===== MOBILE HERO ===== */
 @media (max-width: 768px) {
   .hero {
-    margin-top: 80px; /* slightly bigger space on mobile */
+    margin-top: 80px;
+    min-height: 200px; /* smaller height for mobile */
+    padding: 10px;
   }
 
   .hero img {
@@ -104,7 +112,6 @@ header {
     height: auto;
   }
 }
-
 /* ===== SHORT STORIES PAGE ===== */
 
 .stories-container {
