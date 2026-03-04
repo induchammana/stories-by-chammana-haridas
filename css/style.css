@@ -233,3 +233,14 @@ header {
   }
 
 }
+/* MOBILE HERO IMPROVEMENT */
+
+@media (max-width: 768px) {
+
+  .hero img {
+    width: 100%;
+    height: 50vh;   /* 50% of phone screen height */
+    object-fit: cover;
+  }
+
+}
