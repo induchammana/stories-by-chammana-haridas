@@ -38,17 +38,20 @@ header {
   justify-content:space-between;
   align-items:center;
   padding:15px 20px;
+  position:relative;
 }
 
+/* hamburger icon */
 .menu-toggle{
   font-size:28px;
   color:white;
   cursor:pointer;
 }
 
+/* menu container */
 .nav-links{
-  position:absolute;
-  top:60px;        /* appears below navbar */
+  position:fixed;
+  top:65px;            /* slightly below navbar */
   left:0;
   width:100%;
   background:#111;
@@ -56,11 +59,17 @@ header {
   display:none;
   flex-direction:column;
   padding:0;
+  margin:0;
+  z-index:999;         /* keeps it above content */
+}
+
+.nav-links.active{
+  display:flex;
 }
 
 .nav-links li{
   text-align:center;
-  padding:12px 0;
+  padding:15px 0;
 }
 
 .nav-links li a{
@@ -69,9 +78,6 @@ header {
   font-size:18px;
 }
 
-.nav-links.active{
-  display:flex;
-}
 
 /* ===== DROPDOWN ===== */
 
