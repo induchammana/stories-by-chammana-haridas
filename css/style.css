@@ -48,13 +48,14 @@ header {
 
 .nav-links{
   position:absolute;
-  top:60px;
+  top:60px;        /* appears below navbar */
   left:0;
   width:100%;
   background:#111;
   list-style:none;
   display:none;
   flex-direction:column;
+  padding:0;
 }
 
 .nav-links li{
