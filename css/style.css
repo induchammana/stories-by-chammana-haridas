@@ -201,15 +201,18 @@ header {
     font-size: 16px;
   }
 
-  .hero{
-    width:100%;
-    min-height:100vh;
-  }
+.hero {
+  width: 100%;
+  min-height: calc(100vh - 60px); /* fill screen below navbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .hero img{
-  width:100%;
-  height:auto;
-  display:block;
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 }
