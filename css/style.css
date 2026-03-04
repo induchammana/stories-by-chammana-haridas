@@ -207,17 +207,17 @@ header {
     display: block;
   }
 
-  .hero img {
-    width: 100%;
-    max-width: none;   /* remove restriction */
-    height: auto;
-    display: block;
-  }
+  .hero {
+  width: 100%;
+  overflow: hidden;
+}
 
-  .hero-text {
-    width: 90%;
-    margin: 0 auto;
-    padding: 10px;
-  }
+.hero img {
+  width: 100%;
+  height: 70vh;        /* makes it fill most of the phone screen */
+  object-fit: cover;   /* crops extra paper space nicely */
+  object-position: center;
+  display: block;
+}
 
 }
