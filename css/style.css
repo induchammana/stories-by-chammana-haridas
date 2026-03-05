@@ -29,7 +29,7 @@ header {
   position: sticky;
   top: 0;
   width: 100%;
-  background: white;
+  background: #f4efe6;   /* paper-like color */
   z-index: 1000;
   border-bottom: 1px solid #ddd;
 }
