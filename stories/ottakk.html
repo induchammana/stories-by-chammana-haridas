@@ -10,17 +10,15 @@
 
 <body class="short-page">
 <a id="top"></a>
-<header>
-  <nav class="navbar">
-    <ul class="nav-links">
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="short.html">Short Stories</a></li>
-      <li><a href="long.html">Long Stories</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+<div id="header"></div>
+
+<script>
+fetch("/stories-by-chammana-haridas/header.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+  });
+</script>
 
 <main class="story-page">
     <h1>ഒറ്റയ്ക്ക്</h1>
