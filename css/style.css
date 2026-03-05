@@ -16,13 +16,17 @@ html,body{
 }
 
 /* Push page content below fixed header */
-
-
 /* remove any browser spacing above first element */
+
 body, header, section 
 {
   margin-top: 0;
 }
+
+
+
+
+
 /* ===== HEADER / NAVBAR ===== */
 
 header {
@@ -81,6 +85,9 @@ header {
   display:block;
 }
 
+
+
+
 /* ===== HERO TEXT ===== */
 
 .hero-text {
@@ -102,11 +109,15 @@ header {
   font-size: 20px;
 }
 
+
+
+
 /* ===== STORIES PAGE ===== */
 
 .stories-container {
   max-width: 800px;
   margin: 40px auto 80px;
+  padding: 0 20px;
 }
 
 .story-card {
@@ -129,13 +140,17 @@ header {
   color: #222;
 }
 
+
+
+
 /* ===== STORY PAGE ===== */
 
-.short-page{
-  background-image:url("../images/backgroundpage.png");
-  background-size:cover;
-  background-position:top center;
-  background-repeat:repeat-y;
+.story-page{
+  max-width:720px;
+  margin:60px auto 80px;
+  padding:0 20px;
+  line-height:2.1;
+  font-size:19px;
 }
 
 .story-page h1 {
@@ -171,7 +186,7 @@ header {
   border-radius:4px;
 }
 .story-nav a:hover{
-  color:#eee;
+  background:#eee;
 }
 
 .story-image{
@@ -182,9 +197,6 @@ header {
   border-radius:6px;
   box-shadow:0 4px 10px rgba(0,0,0,0.15);
 }
-
-
-
 
 /* ===== FOOTER ===== */
 
