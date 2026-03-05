@@ -155,7 +155,22 @@ header {
   margin-bottom: 24px;
   text-align: justify;
 }
+.story-nav{
+  display:flex;
+  justify-content:space-between;
+  max-width:720px;
+  margin:40px auto;
+  font-size:16px;
+}
 
+.story-nav a{
+  text-decoration:none;
+  color:#333;
+}
+
+.story-nav a:hover{
+  color:#666;
+}
 /* ===== FOOTER ===== */
 
 .footer {
@@ -221,6 +236,10 @@ header {
 .back-top a:hover{
   background:#eee;
 }
+
+
+
+
 /* ===== MOBILE ===== */
 
 @media (max-width:1024px) {
