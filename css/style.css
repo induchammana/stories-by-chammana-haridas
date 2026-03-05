@@ -131,12 +131,11 @@ header {
 
 /* ===== STORY PAGE ===== */
 
-.story-page {
-  max-width: 720px;
-  margin: 60px auto 80px;
-  padding: 0 20px;
-  line-height: 2.1;
-  font-size: 19px;
+.short-page{
+  background-image:url("../images/backgroundpage.png");
+  background-size:cover;
+  background-position:top center;
+  background-repeat:repeat-y;
 }
 
 .story-page h1 {
