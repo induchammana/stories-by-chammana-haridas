@@ -195,9 +195,9 @@ header {
   background: #111;
   color: white;
 }
-.short-page {
+.short-page{
   background-image: url("../images/backgroundpage.png");
-  background-size: 100% auto;
+  background-size: cover;
   background-position: top center;
   background-repeat: repeat-y;
   background-color: #fafafa;
@@ -251,7 +251,9 @@ header {
 .back-top a:hover{
   background:#eee;
 }
-
+img{
+  display:block;
+}
 
 
 
