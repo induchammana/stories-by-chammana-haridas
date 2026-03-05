@@ -132,16 +132,17 @@ header {
 /* ===== STORY PAGE ===== */
 
 .story-page {
-  max-width: 800px;
+  max-width: 720px;
   margin: 60px auto 80px;
   padding: 0 20px;
-  line-height: 1.9;
-  font-size: 18px;
+  line-height: 2.1;
+  font-size: 19px;
 }
 
 .story-page h1 {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  font-size: 36px;
 }
 
 .story-page .author {
@@ -151,7 +152,7 @@ header {
 }
 
 .story-page p {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   text-align: justify;
 }
 
