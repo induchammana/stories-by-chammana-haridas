@@ -165,11 +165,14 @@ header {
 
 .story-nav a{
   text-decoration:none;
+  font-size:16px;
   color:#333;
+  padding:8px 14px;
+  border:1px solid #999;
+  border-radius:4px;
 }
-
 .story-nav a:hover{
-  color:#666;
+  color:#eee;
 }
 /* ===== FOOTER ===== */
 
