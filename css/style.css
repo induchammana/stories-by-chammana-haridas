@@ -106,8 +106,7 @@ header {
 
 .stories-container {
   max-width: 800px;
-  margin: 120px auto 80px;
-  padding: 0 20px;
+  margin: 40px auto 80px;
 }
 
 .story-card {
@@ -184,7 +183,7 @@ header {
   width:80px;
   height:2px;
   background:#333;
-  margin:15px auto 0;
+  margin:8px auto 0;
 }
 
 .top-button{
