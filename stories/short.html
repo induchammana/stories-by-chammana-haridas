@@ -8,19 +8,15 @@
 </head>
 <body class="short-page">
 
-<header>
-  <nav class="navbar">
+<div id="header"></div>
 
-    <ul class="nav-links">
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="short.html">Short Stories</a></li>
-      <li><a href="long.html">Long Stories</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-
-  </nav>
-</header>
+<script>
+fetch("/stories-by-chammana-haridas/header.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+  });
+</script>
 
 <section class="page-title">
   <h1>Short Stories</h1>
