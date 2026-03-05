@@ -8,18 +8,15 @@
 </head>
 <body>
 
-<header>
-  <nav class="navbar">
+<div id="header"></div>
 
-  <ul class="nav-links">
-  <li><a href="/stories-by-chammana-haridas/">Home</a></li>
-  <li><a href="/stories-by-chammana-haridas/pages-from-life/pages-from-life.html">Pages from Life</a></li>
-  <li><a href="/stories-by-chammana-haridas/stories/short.html">Short Stories</a></li>
-  <li><a href="/stories-by-chammana-haridas/stories/long.html">Long Stories</a></li>
-  <li><a href="/stories-by-chammana-haridas/travel/travel.html">Travel</a></li>
-  <li><a href="/stories-by-chammana-haridas/about.html">About</a></li>
-  <li><a href="/stories-by-chammana-haridas/contact.html">Contact</a></li>
-</ul>
+<script>
+fetch("header.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+  });
+</script>
 
   </nav>
 </header>
@@ -49,6 +46,7 @@ dropdown.addEventListener("click", () => {
 </script>
 </body>
 </html>
+
 
 
 
