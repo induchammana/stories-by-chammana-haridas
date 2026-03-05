@@ -276,7 +276,7 @@ img{
 
 .hero {
   width: 100%;
-  min-height: calc(100vh - 60px);
+  min-height:0;   /* remove forced screen height */
   display: flex;
   justify-content: center;
   align-items: flex-start; /* align image to top */
