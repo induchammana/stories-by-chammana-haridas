@@ -44,7 +44,7 @@ header {
 .nav-links{
   display:flex;
   list-style:none;
-  gap:35px;
+  gap:50px;
 }
 
 .nav-links li{
@@ -54,7 +54,9 @@ header {
 .nav-links li a{
   text-decoration:none;
   color:black;
-  font-size:18px;
+  font-size:22px;
+  text-transform:uppercase;
+  letter-spacing:1px;
   font-weight:500;
 }
 
@@ -172,7 +174,7 @@ header {
   }
 
   .nav-links li a {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .story-page {
