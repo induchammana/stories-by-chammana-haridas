@@ -38,7 +38,7 @@ header {
   justify-content:space-between;
   align-items:center;
   padding:15px 20px;
-  position:relative;
+ 
 }
 
 /* hamburger icon */
@@ -50,8 +50,8 @@ header {
 
 /* menu container */
 .nav-links{
-  position:fixed;      /* key change */
-  top:60px;            /* just below navbar */
+  position:absolute;
+  top:60px;
   left:0;
   width:100%;
   background:#111;
@@ -60,7 +60,6 @@ header {
   flex-direction:column;
   padding:0;
   margin:0;
-  z-index:999;
 }
 
 .nav-links.active{
