@@ -1,47 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
+
   <title>Short Stories - Chammana Haridas</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/style.css">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet"
+        href="../css/style.css">
+
 </head>
+
 <body class="short-page">
 
-<div id="header"></div>
+  <div id="header"></div>
 
-<script>
-fetch("../header.html")
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById("header").innerHTML = data;
+  <script>
 
-    const toggle = document.querySelector(".menu-toggle");
-    const navLinks = document.querySelector(".nav-links");
+    fetch("../header.html")
+      .then(response => response.text())
+      .then(data => {
 
-    toggle.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    });
-  });
-</script>
+        document.getElementById("header").innerHTML = data;
 
-<section class="page-title">
-  <h1>Short Stories</h1>
-</section>
+      });
 
-<main class="stories-container">
+  </script>
 
-<a href="shivan.html" class="story-card">ശിവൻ</a>
-<a href="sulaiman.html" class="story-card">സുലൈമാൻ</a>
-<a href="ottakk.html" class="story-card">ഒറ്റയ്ക്ക്</a>
-<a href="vengalamupschool.html" class="story-card">വെങ്ങളം യു.പി.സ്കൂൾ</a>
-<a href="kashandi.html" class="story-card">കഷണ്ടി</a>
 
-</main>
+  <section class="page-title">
 
-  
-<footer class="footer">
-  <p>&copy; 2026 Chammana Haridas. All stories reserved.</p>
-</footer>
+    <h1>Short Stories</h1>
+
+  </section>
+
+
+  <main class="stories-container">
+
+    <a href="shivan.html"
+       class="story-card">ശിവൻ</a>
+
+    <a href="sulaiman.html"
+       class="story-card">സുലൈമാൻ</a>
+
+    <a href="ottakk.html"
+       class="story-card">ഒറ്റയ്ക്ക്</a>
+
+    <a href="vengalamupschool.html"
+       class="story-card">വെങ്ങളം യു.പി.സ്കൂൾ</a>
+
+    <a href="kashandi.html"
+       class="story-card">കഷണ്ടി</a>
+
+  </main>
+
+
+  <footer class="footer">
+
+    <p>
+      &copy; 2026 Chammana Haridas.
+      All stories reserved.
+    </p>
+
+  </footer>
+
 </body>
+
 </html>
