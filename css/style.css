@@ -52,11 +52,7 @@ header{
 
   backdrop-filter:blur(6px);
 
-  border-radius:0 0 12px 12px;
-
-  width:fit-content;
-
-  margin:0 auto;
+  width:100%;
 }
 
 
