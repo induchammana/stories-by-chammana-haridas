@@ -313,7 +313,24 @@ header{
 
   background:#eee;
 }
+/* ===== STORY IMAGE ===== */
 
+.story-image{
+
+  display:block;
+
+  width:100%;
+
+  max-width:720px;
+
+  height:auto;
+
+  margin:25px auto;
+
+  border-radius:6px;
+
+  box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
 /* ===== MOBILE ===== */
 
 @media (max-width:768px){
