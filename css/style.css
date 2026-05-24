@@ -207,8 +207,10 @@ header{
 }
 
 .story-page p{
+
   margin-bottom:24px;
-  text-align:justify;
+  text-align:left;
+  line-height:2;
 }
 
 
