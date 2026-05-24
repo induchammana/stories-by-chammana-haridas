@@ -80,7 +80,7 @@ header{
 
   text-transform:uppercase;
 
-  letter-spacing:1px;
+  letter-spacing:0.3px;
 
   font-weight:500;
 }
@@ -358,9 +358,9 @@ header{
 }
   .nav-links li a{
 
-    font-size:11px;
-
+    font-size:12px;
     white-space:nowrap;
+    letter-spacing:0;
 }
 .navbar{
     overflow-x:auto;
