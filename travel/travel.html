@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <title>Travelogue - Chammana Haridas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="short-page">
+
+  <div id="header"></div>
+
+  <script>
+    fetch("../header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("header").innerHTML = data;
+      });
+  </script>
+
+  <section class="page-title">
+    <h1>Travel</h1>
+  </section>
+
+</body>
+</html>
