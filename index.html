@@ -2,34 +2,23 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8">
 
   <title>Stories by Chammana Haridas</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet"
+        href="css/style.css">
+
 </head>
 
 <body>
 
-  <!-- Header -->
   <div id="header"></div>
 
-  <!-- Hero -->
-  <section class="hero">
-
-    <picture>
-      <source media="(max-width:768px)"
-              srcset="images/background-mobile.png">
-
-      <img src="images/background.png"
-           alt="Stories by Chammana Haridas">
-    </picture>
-
-  </section>
-
-  <!-- Load Header -->
   <script>
 
     fetch("header.html")
@@ -38,17 +27,25 @@
 
         document.getElementById("header").innerHTML = data;
 
-        const toggle = document.querySelector(".menu-toggle");
-
-        const navLinks = document.querySelector(".nav-links");
-
-        toggle.addEventListener("click", () => {
-          navLinks.classList.toggle("active");
-        });
-
       });
 
   </script>
 
+
+  <section class="hero">
+
+    <picture>
+
+      <source media="(max-width:1024px)"
+              srcset="images/background-mobile.png">
+
+      <img src="images/background.png"
+           alt="Stories by Chammana Haridas">
+
+    </picture>
+
+  </section>
+
 </body>
+
 </html>
