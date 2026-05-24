@@ -3,63 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <title>Stories by Chammana Haridas</title>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<div id="header"></div>
+  <!-- Header -->
+  <div id="header"></div>
 
-<script>
-fetch("header.html")
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById("header").innerHTML = data;
-  });
-</script>
+  <!-- Hero Section -->
+  <section class="hero">
 
-  </nav>
-</header>
+    <picture>
+      <source media="(max-width: 1024px)" srcset="images/background-mobile.png">
 
-<section class="hero">
+      <img src="images/background.png"
+           alt="Stories by Chammana Haridas">
+    </picture>
 
-<picture>
-  <source media="(max-width:1024px)" srcset="images/background-mobile.png">
-  <img src="images/background.png" alt="Stories by Chammana Haridas">
-</picture>
+  </section>
 
-</section>
-<script>
+  <!-- Load Header + Mobile Menu -->
+  <script>
+    fetch("header.html")
+      .then(response => response.text())
+      .then(data => {
 
-const toggle = document.querySelector(".menu-toggle");
-const nav = document.querySelector(".nav-links");
-const dropdown = document.querySelector(".dropdown");
+        // Insert header
+        document.getElementById("header").innerHTML = data;
 
-toggle.addEventListener("click", () => {
-  nav.classList.toggle("active");
-});
+        // Mobile menu
+        const toggle = document.querySelector(".menu-toggle");
+        const nav = document.querySelector(".nav-links");
+        const dropdown = document.querySelector(".dropdown");
 
-dropdown.addEventListener("click", () => {
-  dropdown.classList.toggle("active");
-});
+        // Hamburger menu toggle
+        if (toggle && nav) {
+          toggle.addEventListener("click", () => {
+            nav.classList.toggle("active");
+          });
+        }
 
-</script>
+        // Dropdown toggle
+        if (dropdown) {
+          dropdown.addEventListener("click", () => {
+            dropdown.classList.toggle("active");
+          });
+        }
+
+      })
+      .catch(error => console.log("Header failed to load:", error));
+  </script>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
