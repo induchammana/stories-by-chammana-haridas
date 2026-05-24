@@ -10,7 +10,7 @@
 html, body {
   width:100%;
   overflow-x:hidden;
-  background:#fafafa;
+  background:#f4efe6;
 }
 
 body{
@@ -117,7 +117,7 @@ header{
 
   background-repeat:repeat-y;
 
-  background-color:#fafafa;
+  background-color:#f4efe6;
 }
 
 .page-title{
