@@ -11,10 +11,17 @@
 <div id="header"></div>
 
 <script>
-fetch("/stories-by-chammana-haridas/header.html")
+fetch("../header.html")
   .then(response => response.text())
   .then(data => {
     document.getElementById("header").innerHTML = data;
+
+    const toggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
   });
 </script>
 
