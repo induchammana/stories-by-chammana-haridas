@@ -341,9 +341,11 @@ header{
 
   .nav-links{
 
+    display:flex;
+
     gap:10px;
 
-    justify-content:center;
+    justify-content:flex-start;
 
     overflow-x:auto;
 
@@ -351,7 +353,9 @@ header{
 
     padding-bottom:5px;
 }
-
+.nav-links::-webkit-scrollbar{
+    display:none;
+}
   .nav-links li a{
 
     font-size:11px;
