@@ -4,12 +4,10 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family: Georgia, serif;
+  font-family:Georgia, serif;
 }
 
-html,body{
-  margin:0;
-  padding:0;
+html, body {
   width:100%;
   overflow-x:hidden;
   background:#fafafa;
@@ -29,21 +27,35 @@ main{
 
 /* ===== HEADER ===== */
 
-header {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  background: #f4efe6;
-  z-index: 1000;
-  border-bottom: 1px solid #ddd;
+header{
+  position:sticky;
+  top:0;
+  width:100%;
+  z-index:1000;
+
+  background:transparent;
+
+  padding-top:10px;
 }
 
 .navbar{
+
   display:flex;
+
   justify-content:center;
+
   align-items:center;
-  padding:15px 20px;
+
+  padding:20px;
+
+  background:rgba(244,239,230,0.78);
+
+  backdrop-filter:blur(4px);
 }
+
+
+
+/* ===== NAVIGATION ===== */
 
 .nav-links{
   display:flex;
@@ -52,11 +64,17 @@ header {
 }
 
 .nav-links li a{
+
   text-decoration:none;
-  color:black;
-  font-size:22px;
+
+  color:#2f2b26;
+
+  font-size:20px;
+
   text-transform:uppercase;
+
   letter-spacing:1px;
+
   font-weight:500;
 }
 
@@ -83,31 +101,47 @@ header {
 /* ===== STORIES PAGE ===== */
 
 .short-page{
+
   background-image:url("../images/backgroundpage.png");
+
   background-size:cover;
+
   background-position:top center;
+
   background-repeat:repeat-y;
+
   background-color:#fafafa;
 }
 
 .page-title{
   text-align:center;
   margin-top:40px;
-  margin-bottom:15px;
+  margin-bottom:20px;
 }
 
 .page-title h1{
   font-size:42px;
+  color:#2f2b26;
 }
 
 .page-title h1::after{
+
   content:"";
+
   display:block;
+
   width:80px;
+
   height:2px;
+
   background:#333;
+
   margin:8px auto 0;
 }
+
+
+
+/* ===== STORIES CONTAINER ===== */
 
 .stories-container{
   max-width:800px;
@@ -115,16 +149,30 @@ header {
   padding:0 20px;
 }
 
+
+
+/* ===== STORY CARDS ===== */
+
 .story-card{
+
   display:block;
+
   text-decoration:none;
+
   font-size:20px;
+
   color:#222;
-  background:white;
+
+  background:rgba(255,255,255,0.85);
+
   padding:20px;
+
   margin-bottom:20px;
+
   border-radius:8px;
+
   box-shadow:0 3px 8px rgba(0,0,0,0.08);
+
   transition:0.3s;
 }
 
@@ -161,10 +209,15 @@ header {
 /* ===== FOOTER ===== */
 
 .footer{
+
   text-align:center;
+
   padding:30px;
-  background:#f4efe6;
+
+  background:rgba(244,239,230,0.85);
+
   color:black;
+
   border-top:1px solid #ddd;
 }
 
@@ -178,8 +231,14 @@ header {
 
 @media (max-width:768px){
 
+  .navbar{
+    padding:15px;
+  }
+
   .nav-links{
     gap:15px;
+    flex-wrap:wrap;
+    justify-content:center;
   }
 
   .nav-links li a{
@@ -193,6 +252,7 @@ header {
   .story-page{
     margin:40px 20px 60px;
     font-size:16px;
+    line-height:1.9;
   }
 
 }
