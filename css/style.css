@@ -340,15 +340,27 @@ header{
   }
 
   .nav-links{
-    gap:15px;
-    flex-wrap:wrap;
+
+    gap:10px;
+
     justify-content:center;
-  }
+
+    overflow-x:auto;
+
+    flex-wrap:nowrap;
+
+    padding-bottom:5px;
+}
 
   .nav-links li a{
-    font-size:13px;
-  }
 
+    font-size:11px;
+
+    white-space:nowrap;
+}
+.navbar{
+    overflow-x:auto;
+}
   .page-title h1{
     font-size:30px;
   }
