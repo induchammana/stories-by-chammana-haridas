@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Novel by - Chammana Haridas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="short-page">
+
+  <div id="header"></div>
+
+  <script>
+    fetch("../header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("header").innerHTML = data;
+      });
+  </script>
+
+  <section class="page-title">
+    <h1>Travelogue</h1>
+  </section>
+  <main class="stories-container">
+
+    <a href="raaman.html"
+       class="story-card">രാമൻ</a>
+
+    <a href="Novel2.html"
+       class="story-card">Novel 2</a>
+
+    <a href="ottakk.html"
+       class="story-card">Novel 3</a>
+
+    <a href="vengalamupschool.html"
+       class="story-card">Novel 4</a>
+
+    <a href="kashandi.html"
+       class="story-card">Novel 5</a>
+
+  </main>
+
+
+  <footer class="footer">
+
+    <p>
+      &copy; 2026 Chammana Haridas.
+      All stories reserved.
+    </p>
+
+  </footer>
+</body>
+</html>
