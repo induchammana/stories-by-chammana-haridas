@@ -494,6 +494,64 @@ header{
 
   padding:0 20px;
 }
+/* ===== THOUGHTS WALL ===== */
+
+.thoughts-wall{
+
+  display:grid;
+
+  grid-template-columns:repeat(3, 1fr);
+
+  gap:22px;
+
+  max-width:1100px;
+
+  margin:50px auto 80px;
+
+  padding:0 20px;
+}
+
+
+
+/* ===== THOUGHT BOX ===== */
+
+.thought-box{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  text-align:center;
+
+  text-decoration:none;
+
+  color:#2f2b26;
+
+  font-size:17px;
+
+  line-height:2;
+
+  background:rgba(255,255,255,0.55);
+
+  min-height:180px;
+
+  padding:25px;
+
+  border-radius:10px;
+
+  box-shadow:0 3px 10px rgba(0,0,0,0.05);
+
+  transition:0.3s;
+}
+
+.thought-box:hover{
+
+  transform:translateY(-3px);
+
+  background:rgba(255,255,255,0.8);
+}
 
 
 
@@ -502,13 +560,21 @@ header{
 @media (max-width:768px){
 
   .chapter-container{
-
     grid-template-columns:repeat(2, 1fr);
-
     gap:10px;
   }
 .thoughts-container{
-
     grid-template-columns:1fr;
 }
+  .thoughts-wall{
+    grid-template-columns:1fr;
+    gap:16px;
+  }
+
+  .thought-box{
+    min-height:140px;
+    font-size:15px;
+    line-height:1.8;
+  }
+
 }
