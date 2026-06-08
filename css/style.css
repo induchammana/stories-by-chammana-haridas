@@ -357,7 +357,10 @@ header{
 
   color:#2f2b26;
 }
+.nav-links.active{
 
+  display:flex;
+}
 @media (max-width:768px){
 
  .menu-toggle{
@@ -586,9 +589,7 @@ header{
     grid-template-columns:repeat(2, 1fr);
     gap:10px;
   }
-.thoughts-container{
-    grid-template-columns:1fr;
-}
+
   .thoughts-wall{
     grid-template-columns:1fr;
     gap:16px;
