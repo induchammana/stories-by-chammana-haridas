@@ -17,8 +17,16 @@ fetch("../../header.html")
   .then(response => response.text())
   .then(data => {
     document.getElementById("header").innerHTML = data;
+
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav-links");
+
+    if(toggle && nav){
+      toggle.addEventListener("click", function(){
+        nav.classList.toggle("active");
+      });
+    }
   });
-</script>
 
 <main class="story-page">
     <h1>ചന്ദ്രൻ  ഭാഗം 10 </h1>
