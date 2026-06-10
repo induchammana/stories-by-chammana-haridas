@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ശങ്കു - Chammana Haridas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="short-page">
+<a id="top"></a>
+<div id="header"></div>
+
+<script>
+fetch("../header.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav-links");
+    if(toggle && nav){
+      toggle.addEventListener("click", function(){
+        nav.classList.toggle("active");
+      });
+    }
+  });
+</script>
+
+<main class="story-page">
+    <h1>ശങ്കു</h1>
+    <img src="../images/shanku.png"
+         alt="Story Image"
+         class="story-image">
+
+<article>
+ <p>
+                <!-- Story here -->
+                  
+ </p>
+     <p>
+                <!-- Story here -->
+                  
+ </p>
+     <p>
+                <!-- Story here -->
+                  
+ </p>
+     <p>
+                <!-- Story here -->
+                  
+ </p>
+     <p>
+                <!-- Story here -->
+                  
+ </p>
+     <p>
+                <!-- Story here -->
+                  
+ </p>
+     <p>
+                <!-- Story here -->
+                  
+ </p>
+     <p>
+                <!-- Story here -->
+                  
+ </p>
+     <p>
+                <!-- Story here -->
+                  
+ </p>
+     <p>
+                <!-- Story here -->
+                  
+ </p>
+     <p>
+                <!-- Story here -->
+                  
+ </p>
+     <p>
+                <!-- Story here -->
+                  
+ </p>
+</article>
+    
+<div class="story-nav">
+  <a href="rahulvakkel.html">    ← Previous Story  </a>
+  <a href="short.html">    Back to Stories  </a>
+  <a href="NextStory.html">    Next Story →  </a>
+</div>
+<div class="back-top">
+  <a href="#top">    ↑ Back to Top  </a>
+</div>
+
+</main>
+
+<footer class="footer">
+    <p>&copy; 2026 Chammana Haridas. All stories reserved.</p>
+</footer>
+
+</body>
+</html>
