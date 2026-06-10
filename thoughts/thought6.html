@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ലോകായുക്ത - Chammana Haridas</title>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+        href="../css/style.css">
+</head>
+
+<body class="short-page">
+<a id="top"></a>
+<div id="header"></div>
+
+<script>
+fetch("../header.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav-links");
+    if(toggle && nav){
+      toggle.addEventListener("click", function(){
+        nav.classList.toggle("active");
+      });
+    }
+  });
+</script>
+
+<main class="thought-page">
+  <div class="thought-content">
+റപല കമീഷനുകളിൽ കുറച്ചെങ്കിലും അധികാരമുണ്ടായിരുന്നത് നായനാർ സർക്കാർ ചർച്ച ചെയ്ത് രൂപീകൃതമായ ലോകായുക്തക്ക് മാത്രമായിരുന്നു.<br>
+അതും കൂടി എടുത്തു മാറ്റുന്നതിനേക്കാളും നല്ലത്, വെറുതെ കോടികൾ ചിലവാക്കുന്ന എല്ലാം നിർത്തലാക്കുന്നതല്ലേ.<br>
+കാറും വലിയ ശമ്പളവും നൽകി പത്രങ്ങളിൽ വാർത്ത വരുന്നതിനപ്പുറം ഒന്നും സംഭവിക്കാത്ത എല്ലാം പിരിച്ചുവിടണം
+  </div>
+</main>
+
+<footer class="footer">
+  <p>
+    &copy; 2026 Chammana Haridas.
+    All rights reserved.
+  </p>
+
+</footer>
+
+</body>
+</html>
