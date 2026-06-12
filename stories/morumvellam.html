@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>മോരും വെള്ളം - Chammana Haridas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="short-page">
+<a id="top"></a>
+<div id="header"></div>
+
+<script>
+fetch("../header.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav-links");
+    if(toggle && nav){
+      toggle.addEventListener("click", function(){
+        nav.classList.toggle("active");
+      });
+    }
+  });
+</script>
+
+<main class="story-page">
+    <h1>മോരും വെള്ളം</h1>
+    <img src="../images/morumvellam.png"
+         alt="Story Image"
+         class="story-image">
+
+<article>
+ <p>
+                പതിവ് പോലെ കോലായിരുന്നു മോരും വെള്ളവും തേങ്ങാപ്പൂളും കഴിക്കോമ്പോഴാണ് അവൻ വന്നത്.
+തോളിൽ അവന്ന് താങ്ങാവുന്നതിലധികം ഭാരമുള്ള ഒരു കറുത്ത സഞ്ചിയുമുണ്ട്.
+ആതിഥ്യ മര്യാദയനുസരിച്ച് ഞാനവന്ന് മോരും വെള്ളം എടുക്കാനായി പോയി.
+                  
+ </p>
+     <p>
+               അത് നീട്ടിയെങ്കിലും അവനത് നിരസിച്ചു.
+അങ്കിൾ ഇപ്പോഴും ഇതൊക്കെയാണോ കുടിക്കുന്നത്? അവൻ ചോദിച്ചു.
+ഇതൊക്കെ ഒഴിവാക്കണം, സർ .
+                  
+ </p>
+     <p>
+               അവൻ ബാഗിൽ നിന്ന് ഓരോന്നായി പുറത്തെടുത്തിട്ടു.
+പൊതി കാണിച്ചു, സർ ഇത് ദിവസം രാവിലെ കുറച്ചെടുത്ത് കഴിക്കുകയാണെങ്കിൽ ആ ദിവസം മുഴുവൻ ഉന്മേഷത്തോടെ ഇരിക്കാൻ പറ്റും.മറ്റൊരു പൊതിയെടുത്തു, ഇതു കഴിച്ചാൽ രാത്രി നല്ല ഉറക്കം കിട്ടും, അങ്ങനെ ഓരോന്നായി എടുത്ത് അതിൻ്റെ ഗുണങ്ങൾ പറഞ്ഞപ്പോൾ ,അതൊക്കെ വാങ്ങണമെന്ന് എനിക്ക് തോന്നി.
+                  
+ </p>
+     <p>
+               വാങ്ങാനായി നോക്കുമ്പോൾ കയ്യിൽ പണമില്ല, അവന്ന് ഗൂഗിളും, മെഷ്യനുമില്ല.
+                  
+ </p>
+     <p>
+                ഞാനും അവനും നിരാശനായി.<br>
+ഞാൻ വീണ്ടും ഒരു ഗ്ലാസ് മോരും വെള്ളം കൂടി എടുത്തു കഴിച്ചു.
+                  
+ </p>
+</article>
+    
+<div class="story-nav">
+  <a href="gramam.html">    ← Previous Story  </a>
+  <a href="short.html">    Back to Stories  </a>
+  <a href="NextStory.html">    Next Story →  </a>
+</div>
+<div class="back-top">
+  <a href="#top">    ↑ Back to Top  </a>
+</div>
+
+</main>
+
+<footer class="footer">
+    <p>&copy; 2026 Chammana Haridas. All stories reserved.</p>
+</footer>
+
+</body>
+</html>
