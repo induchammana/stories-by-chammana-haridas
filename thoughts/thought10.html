@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ചെറിയ മറവികൾം  - Chammana Haridas</title>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+        href="../css/style.css">
+</head>
+
+<body class="short-page">
+<a id="top"></a>
+<div id="header"></div>
+
+<script>
+fetch("../header.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav-links");
+    if(toggle && nav){
+      toggle.addEventListener("click", function(){
+        nav.classList.toggle("active");
+      });
+    }
+  });
+</script>
+
+<main class="thought-page">
+  <div class="thought-content">
+    <h1 style="text-align:center; margin-bottom:30px;">ചെറിയ മറവികൾ</h1>
+<p>
+  നമ്മൾ സൂക്ഷിച്ചു വെച്ച ഒരു സാധനം ,അതിൻ്റെ ആവശ്യമുള്ള സമയത്ത് എവിടെയാണ് വെച്ചതെന്നറിയാതെ തിരഞ്ഞ് നടക്കുന്നത് ഒരു വിധമെല്ലാവർക്കും അനുഭവപ്പെട്ടിട്ടുണ്ടാകും.
+</p>
+  <p>ആ കാര്യത്തെപ്പറ്റി വെറുതെയൊരന്വേഷണം നടത്തിയപ്പോൾ കിട്ടിയ വിവരം വളരെ രസകരമായിത്തോന്നി .
+</p>
+    <p>
+      ഒരു മനുഷ്യായുസ്സിൽ അപ്രകാരം തിരച്ചിൽ നടത്താൻ ഒരാൾ ഏകദേശം ഏഴു വർഷത്തോളം സമയമെടുക്കുമെന്നാണത്.
+അത് പലപ്പോഴായതുകൊണ്ട് നമ്മൾ അറിയുന്നില്ലെന്ന് മാത്രം.
+    </p>
+    <p>
+      സൂക്ഷിച്ചു വെച്ച സാധനങ്ങൾ എല്ലാം, വെക്കുന്ന അവസരത്തിൽ ഒരു പുസ്തകത്തിൽ എഴുതിവെച്ചാൽ എളുപ്പമാകുമെന്ന ഒരാളുടെ അഭിപ്രായം സ്വീകരിച്ച് ഞാൻ ആ രീതി പിൻതുടർന്നു.
+അത് ഫലപ്രദമാണെന്ന് തോന്നുകയും ചെയ്തു.
+    </p>
+    <p>
+      പക്ഷെ ഇന്നതിനും മാറ്റം വന്നു.
+ഞാനിപ്പോൾ അന്വേഷിച്ചു നടക്കുന്നത് ആ പുസ്തകമാണ്.
+ഇനിയിപ്പോൾ എന്താ ചെയ്യാ .
+    </p>
+  </div>
+</main>
+
+<footer class="footer">
+  <p>
+    &copy; 2026 Chammana Haridas.
+    All rights reserved.
+  </p>
+
+</footer>
+
+</body>
+</html>
