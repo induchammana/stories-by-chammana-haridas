@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>കർക്കിടകം  - Chammana Haridas</title>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+        href="../css/style.css">
+</head>
+
+<body class="short-page">
+<a id="top"></a>
+<div id="header"></div>
+
+<script>
+fetch("../header.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav-links");
+    if(toggle && nav){
+      toggle.addEventListener("click", function(){
+        nav.classList.toggle("active");
+      });
+    }
+  });
+</script>
+
+<main class="thought-page">
+  <div class="thought-content">
+    <h1 style="text-align:center; margin-bottom:30px;">കർക്കിടകം </h1>
+<p>
+  കർക്കടക മാസം രാമായണ പാരായാണമാണ് ചിലരുടെ ആചാരം.
+  എന്നാൽപ്പിന്നെ അതിൽ നിന്നും വ്യത്യസ്ഥമായി കർക്കിടകം ഒന്നു മുതൽ അവസാന ദിവസം വരെ പൂജ്യങ്ങൾ എഴുതുന്ന ചിലരുണ്ട്.
+അതിൻ്റെ പ്രത്യേകത നിങ്ങൾ എത്ര പൂജ്യം എഴുതിയാലും അവസാനം എണ്ണി നോക്കിയാൽ അത് ഇരട്ടയിലാണ് അവസാനിക്കുക.
+ആർക്കും തന്നെ ഒറ്റയിൽ അവസാനിച്ച ചരിത്രമില്ലെന്നാണ് അറിഞ്ഞത്.
+</p>
+    <p>മറ്റു മാസങ്ങളിലെല്ലാം രണ്ടും വരുന്നുണ്ട്.
+കർക്കിടക മാസത്തിൽ മാത്രമാണ് ഈ പ്രത്യേകത.</p>
+  </div>
+</main>
+
+<footer class="footer">
+  <p>
+    &copy; 2026 Chammana Haridas.
+    All rights reserved.
+  </p>
+
+</footer>
+
+</body>
+</html>
