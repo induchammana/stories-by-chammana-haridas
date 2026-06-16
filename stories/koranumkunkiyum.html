@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>കോരനും കുങ്കിയും  - Chammana Haridas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="short-page">
+<a id="top"></a>
+<div id="header"></div>
+
+<script>
+fetch("../header.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav-links");
+    if(toggle && nav){
+      toggle.addEventListener("click", function(){
+        nav.classList.toggle("active");
+      });
+    }
+  });
+</script>
+
+<main class="story-page">
+    <h1>കോരനും കുങ്കിയും </h1>
+    <img src="../images/koranumkunkiyum.png"
+         alt="Story Image"
+         class="story-image">
+
+<article>
+ <p>
+കോരനും കുങ്കിയും. കുട്ടികളില്ല.
+രണ്ടാടുകൾ ഉള്ളത് കൊണ്ട് ജീവിതം സുഖകരം.<br>
+അരിയും കിററും കിട്ടുന്നതു കൊണ്ട് ആട്ടിൻ പാൽ വിറ്റാൽ കിട്ടുന്ന പണം സൂക്ഷിച്ചു വെക്കുകയും ചെയ്യാം.
+ </p>
+<p>
+  ഓണമല്ലേ വരുന്നത്.
+രണ്ടാൾക്കും വളരെ കാലമായ ഒരാഗ്രഹമാണ്.
+പുതിയ കുപ്പായം വാങ്ങി ഇടണമെന്നത് .
+അങ്ങനെ ഇന്നലെ രണ്ടു പേരും തുണിക്കടയിലേക്ക് പോകുമ്പോഴാണ് പോലീസ് വന്നത്.</p>
+<p>എവിടേക്കാ?<br>
+കുപ്പായം വാങ്ങാൻ പോകാ.<br>
+വാക്സിൻ എടുത്തിട്ടുണ്ടോ?<br>
+പൈസ മാത്രമേ എടുത്തിട്ടുള്ളൂ.<br>
+അതല്ല ,സൂചി വെച്ചിനോ?<br>
+ഇല്ല.<br>
+ഇങ്ങക്ക് കോവിഡ് വന്നിനോ? <br>
+ഓൻ വന്നിട്ടില്ല.<br>
+ഓനെല്ല, സുഖക്കേട്.<br>
+ഞമ്മക്കൊന്നും ഇല്ല.<br>
+RT PCR ചെയതിരുന്നോ?<br>
+ആടിനെ അവിടെ കെട്ടിയിട്ട് പോന്നതാ.<br>
+എന്നാ നിങ്ങൾ പൈസ അടക്കണം.ഓരോരുത്തരും 1000 രൂപ.<br></p>
+<p>കുപ്പായം വാങ്ങാൻ വെച്ച പൈസ പോലീസ് കാർക്ക് കൊടുത്തു കോരനും കുങ്കിയും വീട്ടിലേക്ക് തിരികെ നടത്തു.</p>
+                  
+ 
+</article>
+    
+<div class="story-nav">
+  <a href="punarjanmam.html">    ← Previous Story  </a>
+  <a href="short.html">    Back to Stories  </a>
+  <a href="NextStory.html">    Next Story →  </a>
+</div>
+<div class="back-top">
+  <a href="#top">    ↑ Back to Top  </a>
+</div>
+
+</main>
+
+<footer class="footer">
+    <p>&copy; 2026 Chammana Haridas. All stories reserved.</p>
+</footer>
+
+</body>
+</html>
